@@ -35,6 +35,7 @@ namespace SourceCode
             this.btnAddUserOrder = new System.Windows.Forms.Button();
             this.btnEliminateUserOrder = new System.Windows.Forms.Button();
             this.btnViewUserOrders = new System.Windows.Forms.Button();
+            this.addOrder1 = new SourceCode.AddOrder();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@ namespace SourceCode
             this.tableLayoutPanel1.Controls.Add(this.btnAddUserOrder, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnEliminateUserOrder, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnViewUserOrders, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.addOrder1, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -104,6 +106,16 @@ namespace SourceCode
             this.btnViewUserOrders.UseVisualStyleBackColor = false;
             this.btnViewUserOrders.Click += new System.EventHandler(this.btnViewUserOrders_Click);
             // 
+            // addOrder1
+            // 
+            this.addOrder1.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.addOrder1, 3);
+            this.addOrder1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addOrder1.Location = new System.Drawing.Point(3, 86);
+            this.addOrder1.Name = "addOrder1";
+            this.addOrder1.Size = new System.Drawing.Size(801, 329);
+            this.addOrder1.TabIndex = 5;
+            // 
             // ManageUserOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -116,6 +128,7 @@ namespace SourceCode
             this.ResumeLayout(false);
         }
 
+        private SourceCode.AddOrder addOrder1;
         private System.Windows.Forms.Button btnAddUserOrder;
         private System.Windows.Forms.Button btnEliminateUserOrder;
         private System.Windows.Forms.Button btnViewUserOrders;

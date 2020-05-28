@@ -41,6 +41,9 @@ namespace SourceCode
             this.tableLayoutPanelBusiness.SuspendLayout();
             this.tableLayoutPanelProduct.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // tableLayoutPanelBusiness
+            // 
             this.tableLayoutPanelBusiness.ColumnCount = 2;
             this.tableLayoutPanelBusiness.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelBusiness.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -51,6 +54,9 @@ namespace SourceCode
             this.tableLayoutPanelBusiness.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanelBusiness.Size = new System.Drawing.Size(200, 100);
             this.tableLayoutPanelBusiness.TabIndex = 0;
+            // 
+            // btnAddBusiness
+            // 
             this.btnAddBusiness.BackColor = System.Drawing.Color.Transparent;
             this.btnAddBusiness.FlatAppearance.BorderSize = 0;
             this.btnAddBusiness.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -62,6 +68,9 @@ namespace SourceCode
             this.btnAddBusiness.TabIndex = 1;
             this.btnAddBusiness.Text = "Añadir";
             this.btnAddBusiness.UseVisualStyleBackColor = false;
+            // 
+            // btnEliminateBusiness
+            // 
             this.btnEliminateBusiness.BackColor = System.Drawing.Color.Transparent;
             this.btnEliminateBusiness.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEliminateBusiness.FlatAppearance.BorderSize = 0;
@@ -74,6 +83,9 @@ namespace SourceCode
             this.btnEliminateBusiness.TabIndex = 2;
             this.btnEliminateBusiness.Text = "Eliminar";
             this.btnEliminateBusiness.UseVisualStyleBackColor = false;
+            // 
+            // tableLayoutPanelProduct
+            // 
             this.tableLayoutPanelProduct.ColumnCount = 2;
             this.tableLayoutPanelProduct.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelProduct.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -88,6 +100,9 @@ namespace SourceCode
             this.tableLayoutPanelProduct.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanelProduct.Size = new System.Drawing.Size(413, 368);
             this.tableLayoutPanelProduct.TabIndex = 1;
+            // 
+            // btnAddProduct
+            // 
             this.btnAddProduct.BackColor = System.Drawing.Color.Transparent;
             this.btnAddProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAddProduct.FlatAppearance.BorderSize = 0;
@@ -101,6 +116,9 @@ namespace SourceCode
             this.btnAddProduct.Text = "Añadir";
             this.btnAddProduct.UseVisualStyleBackColor = false;
             this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
+            // 
+            // BtnEliminateProduct
+            // 
             this.BtnEliminateProduct.BackColor = System.Drawing.Color.Transparent;
             this.BtnEliminateProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnEliminateProduct.FlatAppearance.BorderSize = 0;
@@ -114,6 +132,9 @@ namespace SourceCode
             this.BtnEliminateProduct.Text = "Eliminar";
             this.BtnEliminateProduct.UseVisualStyleBackColor = false;
             this.BtnEliminateProduct.Click += new System.EventHandler(this.BtnEliminateProduct_Click);
+            // 
+            // addProduct1
+            // 
             this.addProduct1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanelProduct.SetColumnSpan(this.addProduct1, 2);
             this.addProduct1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -121,6 +142,9 @@ namespace SourceCode
             this.addProduct1.Name = "addProduct1";
             this.addProduct1.Size = new System.Drawing.Size(407, 289);
             this.addProduct1.TabIndex = 3;
+            // 
+            // ManageProducts
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;

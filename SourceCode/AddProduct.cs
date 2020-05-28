@@ -35,9 +35,11 @@ namespace SourceCode
         private void AddProduct_Load(object sender, EventArgs e)
         {
             string sql = "SELECT * FROM BUSINESS";
+            
             DataTable dt = ConnectionDB.realizarConsulta(sql);
-            Console.WriteLine(dt);
+            
             List<Business> lista = new List<Business>();
+            
             foreach (DataRow row in dt.Rows)
             {
                 Business b = new Business();

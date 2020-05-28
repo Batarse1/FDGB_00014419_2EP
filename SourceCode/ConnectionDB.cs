@@ -3,7 +3,7 @@ using Npgsql;
 
 namespace SourceCode
 {
-    public class ConnectionDB
+    public static class ConnectionDB
     {
         private static string sConection = 
             "Server=127.0.0.1;Port=5432;User Id=postgres;Password=Fdfb69b0*;Database=FDGB_00014419_2EP"; 
