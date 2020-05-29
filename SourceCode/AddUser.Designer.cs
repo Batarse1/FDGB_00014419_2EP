@@ -137,6 +137,7 @@ namespace SourceCode
             // 
             // btnAddUserDB
             // 
+            this.btnAddUserDB.BackColor = System.Drawing.Color.MediumPurple;
             this.tableLayoutPanel1.SetColumnSpan(this.btnAddUserDB, 2);
             this.btnAddUserDB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAddUserDB.FlatAppearance.BorderSize = 0;
@@ -148,7 +149,7 @@ namespace SourceCode
             this.btnAddUserDB.Size = new System.Drawing.Size(342, 62);
             this.btnAddUserDB.TabIndex = 5;
             this.btnAddUserDB.Text = "Añadir Usuario";
-            this.btnAddUserDB.UseVisualStyleBackColor = true;
+            this.btnAddUserDB.UseVisualStyleBackColor = false;
             this.btnAddUserDB.Click += new System.EventHandler(this.btnAddUserDB_Click);
             // 
             // txtBoxUsername

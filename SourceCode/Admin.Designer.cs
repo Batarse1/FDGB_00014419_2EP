@@ -37,24 +37,22 @@ namespace SourceCode
             this.btnBusiness = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnOrders = new System.Windows.Forms.Button();
-            this.btnGraphics = new System.Windows.Forms.Button();
             this.manageUsers1 = new SourceCode.ManageUsers();
             this.tableLayoutPanelAdmin.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanelAdmin
             // 
-            this.tableLayoutPanelAdmin.ColumnCount = 5;
-            this.tableLayoutPanelAdmin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelAdmin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelAdmin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelAdmin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelAdmin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanelAdmin.ColumnCount = 4;
+            this.tableLayoutPanelAdmin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanelAdmin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanelAdmin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanelAdmin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanelAdmin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanelAdmin.Controls.Add(this.btnUsers, 0, 0);
             this.tableLayoutPanelAdmin.Controls.Add(this.btnBusiness, 1, 0);
             this.tableLayoutPanelAdmin.Controls.Add(this.btnProducts, 2, 0);
             this.tableLayoutPanelAdmin.Controls.Add(this.btnOrders, 3, 0);
-            this.tableLayoutPanelAdmin.Controls.Add(this.btnGraphics, 4, 0);
             this.tableLayoutPanelAdmin.Controls.Add(this.manageUsers1, 0, 1);
             this.tableLayoutPanelAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelAdmin.Location = new System.Drawing.Point(0, 0);
@@ -67,15 +65,16 @@ namespace SourceCode
             // 
             // btnUsers
             // 
-            this.btnUsers.BackColor = System.Drawing.Color.Indigo;
+            this.btnUsers.BackColor = System.Drawing.Color.BlueViolet;
             this.btnUsers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnUsers.FlatAppearance.BorderSize = 0;
             this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsers.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Location = new System.Drawing.Point(3, 3);
+            this.btnUsers.Location = new System.Drawing.Point(0, 0);
+            this.btnUsers.Margin = new System.Windows.Forms.Padding(0);
             this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(154, 84);
+            this.btnUsers.Size = new System.Drawing.Size(200, 90);
             this.btnUsers.TabIndex = 0;
             this.btnUsers.Text = "Usuarios";
             this.btnUsers.UseVisualStyleBackColor = false;
@@ -83,71 +82,64 @@ namespace SourceCode
             // 
             // btnBusiness
             // 
+            this.btnBusiness.BackColor = System.Drawing.Color.BlueViolet;
             this.btnBusiness.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnBusiness.FlatAppearance.BorderSize = 0;
             this.btnBusiness.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBusiness.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnBusiness.ForeColor = System.Drawing.Color.White;
-            this.btnBusiness.Location = new System.Drawing.Point(163, 3);
+            this.btnBusiness.Location = new System.Drawing.Point(200, 0);
+            this.btnBusiness.Margin = new System.Windows.Forms.Padding(0);
             this.btnBusiness.Name = "btnBusiness";
-            this.btnBusiness.Size = new System.Drawing.Size(154, 84);
+            this.btnBusiness.Size = new System.Drawing.Size(200, 90);
             this.btnBusiness.TabIndex = 1;
             this.btnBusiness.Text = "Negocios";
-            this.btnBusiness.UseVisualStyleBackColor = true;
+            this.btnBusiness.UseVisualStyleBackColor = false;
             this.btnBusiness.Click += new System.EventHandler(this.btnBusiness_Click);
             // 
             // btnProducts
             // 
+            this.btnProducts.BackColor = System.Drawing.Color.BlueViolet;
             this.btnProducts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnProducts.FlatAppearance.BorderSize = 0;
             this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProducts.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnProducts.ForeColor = System.Drawing.Color.White;
-            this.btnProducts.Location = new System.Drawing.Point(323, 3);
+            this.btnProducts.Location = new System.Drawing.Point(400, 0);
+            this.btnProducts.Margin = new System.Windows.Forms.Padding(0);
             this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Size = new System.Drawing.Size(154, 84);
+            this.btnProducts.Size = new System.Drawing.Size(200, 90);
             this.btnProducts.TabIndex = 2;
             this.btnProducts.Text = "Productos";
-            this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.UseVisualStyleBackColor = false;
             this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // btnOrders
             // 
+            this.btnOrders.BackColor = System.Drawing.Color.BlueViolet;
             this.btnOrders.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnOrders.FlatAppearance.BorderSize = 0;
             this.btnOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrders.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnOrders.ForeColor = System.Drawing.Color.White;
-            this.btnOrders.Location = new System.Drawing.Point(483, 3);
+            this.btnOrders.Location = new System.Drawing.Point(600, 0);
+            this.btnOrders.Margin = new System.Windows.Forms.Padding(0);
             this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Size = new System.Drawing.Size(154, 84);
+            this.btnOrders.Size = new System.Drawing.Size(200, 90);
             this.btnOrders.TabIndex = 3;
             this.btnOrders.Text = "Ordenes";
-            this.btnOrders.UseVisualStyleBackColor = true;
+            this.btnOrders.UseVisualStyleBackColor = false;
             this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
-            // 
-            // btnGraphics
-            // 
-            this.btnGraphics.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnGraphics.FlatAppearance.BorderSize = 0;
-            this.btnGraphics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGraphics.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnGraphics.ForeColor = System.Drawing.Color.White;
-            this.btnGraphics.Location = new System.Drawing.Point(643, 3);
-            this.btnGraphics.Name = "btnGraphics";
-            this.btnGraphics.Size = new System.Drawing.Size(154, 84);
-            this.btnGraphics.TabIndex = 4;
-            this.btnGraphics.Text = "Gráfica";
-            this.btnGraphics.UseVisualStyleBackColor = true;
             // 
             // manageUsers1
             // 
             this.manageUsers1.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanelAdmin.SetColumnSpan(this.manageUsers1, 5);
+            this.tableLayoutPanelAdmin.SetColumnSpan(this.manageUsers1, 4);
             this.manageUsers1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manageUsers1.Location = new System.Drawing.Point(3, 93);
+            this.manageUsers1.Location = new System.Drawing.Point(0, 90);
+            this.manageUsers1.Margin = new System.Windows.Forms.Padding(0);
             this.manageUsers1.Name = "manageUsers1";
-            this.manageUsers1.Size = new System.Drawing.Size(794, 354);
+            this.manageUsers1.Size = new System.Drawing.Size(800, 360);
             this.manageUsers1.TabIndex = 5;
             // 
             // Admin
@@ -161,12 +153,12 @@ namespace SourceCode
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador de Hugo";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Admin_FormClosing);
             this.tableLayoutPanelAdmin.ResumeLayout(false);
             this.ResumeLayout(false);
         }
 
         private System.Windows.Forms.Button btnBusiness;
-        private System.Windows.Forms.Button btnGraphics;
         private System.Windows.Forms.Button btnOrders;
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button btnUsers;

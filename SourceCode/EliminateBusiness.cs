@@ -15,34 +15,39 @@ namespace SourceCode
         {
             try
             {
-                Eliminar.eliminarDB("Business",Convert.ToInt32(comboBoxBusiness.SelectedValue));
+                Eliminar.eliminarDB("BUSINESS","idBusiness",Convert.ToInt32(comboBoxBusiness.SelectedValue));
                 MessageBox.Show("Producto eliminado exitosamente");
             }
             catch(Exception)
             {
-                throw new IdException("Ha ocurrido un error");
+                MessageBox.Show("Ha ocurrido un error");
             }
         }
 
 
         private void EliminateBusiness_Load(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM BUSINESS";
-            DataTable dt = ConnectionDB.realizarConsulta(sql);
-            Console.WriteLine(dt);
-            List<Business> lista = new List<Business>();
-            foreach (DataRow row in dt.Rows)
+            try
             {
-                Business b = new Business();
-                b.idBusiness = Convert.ToInt32(row[0].ToString());
-                b.name = row[1].ToString();
-                b.description = row[2].ToString();
-                lista.Add(b);
+                string sql = "SELECT * FROM BUSINESS";
+                DataTable dt = ConnectionDB.realizarConsulta(sql);
+                Console.WriteLine(dt);
+                List<Business> lista = new List<Business>();
+                foreach (DataRow row in dt.Rows)
+                {
+                    Business b = new Business();
+                    b.idBusiness = Convert.ToInt32(row[0].ToString());
+                    b.name = row[1].ToString();
+                    b.description = row[2].ToString();
+                    lista.Add(b);
+                }
+                comboBoxBusiness.ValueMember = "idBusiness";
+                comboBoxBusiness.DisplayMember = "name";
+                comboBoxBusiness.DataSource = lista;
             }
-
-            comboBoxBusiness.ValueMember = "idBusiness";
-            comboBoxBusiness.DisplayMember = "name";
-            comboBoxBusiness.DataSource = lista;
+            catch(Exception){
+                MessageBox.Show("Ha ocurrido un error");
+            }
         }
     }
 }

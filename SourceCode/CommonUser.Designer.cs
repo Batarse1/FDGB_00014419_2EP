@@ -34,17 +34,17 @@ namespace SourceCode
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CommonUser));
             this.tableLayoutPanelCommonUser = new System.Windows.Forms.TableLayoutPanel();
             this.btnUsers = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnConfig = new System.Windows.Forms.Button();
             this.tableLayoutPanelCommonUser.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanelCommonUser
             // 
             this.tableLayoutPanelCommonUser.ColumnCount = 2;
-            this.tableLayoutPanelCommonUser.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanelCommonUser.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanelCommonUser.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelCommonUser.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelCommonUser.Controls.Add(this.btnUsers, 0, 0);
-            this.tableLayoutPanelCommonUser.Controls.Add(this.button1, 1, 0);
+            this.tableLayoutPanelCommonUser.Controls.Add(this.btnConfig, 1, 0);
             this.tableLayoutPanelCommonUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelCommonUser.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanelCommonUser.Name = "tableLayoutPanelCommonUser";
@@ -53,37 +53,40 @@ namespace SourceCode
             this.tableLayoutPanelCommonUser.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanelCommonUser.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanelCommonUser.TabIndex = 0;
-            this.tableLayoutPanelCommonUser.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanelCommonUser_Paint);
             // 
             // btnUsers
             // 
-            this.btnUsers.BackColor = System.Drawing.Color.Indigo;
+            this.btnUsers.BackColor = System.Drawing.Color.BlueViolet;
             this.btnUsers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnUsers.FlatAppearance.BorderSize = 0;
             this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsers.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Location = new System.Drawing.Point(3, 3);
+            this.btnUsers.Location = new System.Drawing.Point(0, 0);
+            this.btnUsers.Margin = new System.Windows.Forms.Padding(0);
             this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(554, 84);
+            this.btnUsers.Size = new System.Drawing.Size(400, 90);
             this.btnUsers.TabIndex = 1;
             this.btnUsers.Text = "Ordenar";
             this.btnUsers.UseVisualStyleBackColor = false;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
-            // button1
+            // btnConfig
             // 
-            this.button1.BackColor = System.Drawing.Color.Indigo;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(563, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(234, 84);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Configurar cuenta";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnConfig.BackColor = System.Drawing.Color.BlueViolet;
+            this.btnConfig.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnConfig.FlatAppearance.BorderSize = 0;
+            this.btnConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfig.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnConfig.ForeColor = System.Drawing.Color.White;
+            this.btnConfig.Location = new System.Drawing.Point(400, 0);
+            this.btnConfig.Margin = new System.Windows.Forms.Padding(0);
+            this.btnConfig.Name = "btnConfig";
+            this.btnConfig.Size = new System.Drawing.Size(400, 90);
+            this.btnConfig.TabIndex = 2;
+            this.btnConfig.Text = "Direcciones";
+            this.btnConfig.UseVisualStyleBackColor = false;
+            this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
             // 
             // CommonUser
             // 
@@ -96,12 +99,13 @@ namespace SourceCode
             this.Name = "CommonUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido a Hugo";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CommonUser_FormClosing);
             this.tableLayoutPanelCommonUser.ResumeLayout(false);
             this.ResumeLayout(false);
         }
 
+        private System.Windows.Forms.Button btnConfig;
         private System.Windows.Forms.Button btnUsers;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelCommonUser;
 
         #endregion

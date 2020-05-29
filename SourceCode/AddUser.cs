@@ -57,9 +57,14 @@ namespace SourceCode
 
         private void AddUserVerification(String fullname, String username, String password, bool userType)
         {
-            string sql = $"INSERT INTO APPUSER(fullname, username, password, userType) VALUES('{fullname}', '{username}', '{password}', {userType})";
-            ConnectionDB.realizarAccion(sql);
-            MessageBox.Show("Usuario añadido exitosamente");
+            try{
+                string sql = $"INSERT INTO APPUSER(fullname, username, password, userType) VALUES('{fullname}', '{username}', '{password}', {userType})";
+                ConnectionDB.realizarAccion(sql);
+                MessageBox.Show("Usuario añadido exitosamente");
+            }
+            catch(Exception){
+                MessageBox.Show("Ha ocurrido un error");
+            }
         }
     }
 }

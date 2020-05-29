@@ -17,7 +17,7 @@ namespace SourceCode
             {
                 string sql = "SELECT * FROM APPUSER";
                 DataTable dt = ConnectionDB.realizarConsulta(sql);
-                dataGridViewUsers.DataSource = dt;
+                dataGridViewUser.DataSource = dt;
             }
             catch (Exception exc)
             {

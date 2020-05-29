@@ -31,9 +31,16 @@ namespace SourceCode
 
         void AddBusinessVerification(String name, String description)
         {
-            string sql = $"INSERT INTO BUSINESS(name, description) VALUES ('{name}', '{description}')";
-            ConnectionDB.realizarAccion(sql);
-            MessageBox.Show("Negocio añadido exitosamente");
+            try
+            {
+                string sql = $"INSERT INTO BUSINESS(name, description) VALUES ('{name}', '{description}')";
+                ConnectionDB.realizarAccion(sql);
+                MessageBox.Show("Negocio añadido exitosamente");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ha ocurrido un error");
+            }
         }
     }
 }

@@ -31,32 +31,30 @@ namespace SourceCode
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanelUserOrders = new System.Windows.Forms.TableLayoutPanel();
             this.btnAddUserOrder = new System.Windows.Forms.Button();
             this.btnEliminateUserOrder = new System.Windows.Forms.Button();
             this.btnViewUserOrders = new System.Windows.Forms.Button();
-            this.addOrder1 = new SourceCode.AddOrder();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanelUserOrders.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tableLayoutPanelUserOrders
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.btnAddUserOrder, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnEliminateUserOrder, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnViewUserOrders, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.addOrder1, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(807, 418);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanelUserOrders.ColumnCount = 3;
+            this.tableLayoutPanelUserOrders.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanelUserOrders.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanelUserOrders.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanelUserOrders.Controls.Add(this.btnAddUserOrder, 0, 0);
+            this.tableLayoutPanelUserOrders.Controls.Add(this.btnEliminateUserOrder, 1, 0);
+            this.tableLayoutPanelUserOrders.Controls.Add(this.btnViewUserOrders, 2, 0);
+            this.tableLayoutPanelUserOrders.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelUserOrders.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanelUserOrders.Name = "tableLayoutPanelUserOrders";
+            this.tableLayoutPanelUserOrders.RowCount = 2;
+            this.tableLayoutPanelUserOrders.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanelUserOrders.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanelUserOrders.Size = new System.Drawing.Size(807, 418);
+            this.tableLayoutPanelUserOrders.TabIndex = 0;
             // 
             // btnAddUserOrder
             // 
@@ -66,9 +64,10 @@ namespace SourceCode
             this.btnAddUserOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddUserOrder.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnAddUserOrder.ForeColor = System.Drawing.Color.White;
-            this.btnAddUserOrder.Location = new System.Drawing.Point(3, 3);
+            this.btnAddUserOrder.Location = new System.Drawing.Point(0, 0);
+            this.btnAddUserOrder.Margin = new System.Windows.Forms.Padding(0);
             this.btnAddUserOrder.Name = "btnAddUserOrder";
-            this.btnAddUserOrder.Size = new System.Drawing.Size(263, 77);
+            this.btnAddUserOrder.Size = new System.Drawing.Size(269, 83);
             this.btnAddUserOrder.TabIndex = 2;
             this.btnAddUserOrder.Text = "Añadir Orden";
             this.btnAddUserOrder.UseVisualStyleBackColor = false;
@@ -82,9 +81,10 @@ namespace SourceCode
             this.btnEliminateUserOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminateUserOrder.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnEliminateUserOrder.ForeColor = System.Drawing.Color.White;
-            this.btnEliminateUserOrder.Location = new System.Drawing.Point(272, 3);
+            this.btnEliminateUserOrder.Location = new System.Drawing.Point(269, 0);
+            this.btnEliminateUserOrder.Margin = new System.Windows.Forms.Padding(0);
             this.btnEliminateUserOrder.Name = "btnEliminateUserOrder";
-            this.btnEliminateUserOrder.Size = new System.Drawing.Size(263, 77);
+            this.btnEliminateUserOrder.Size = new System.Drawing.Size(269, 83);
             this.btnEliminateUserOrder.TabIndex = 3;
             this.btnEliminateUserOrder.Text = "Eliminar Orden";
             this.btnEliminateUserOrder.UseVisualStyleBackColor = false;
@@ -98,41 +98,32 @@ namespace SourceCode
             this.btnViewUserOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewUserOrders.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnViewUserOrders.ForeColor = System.Drawing.Color.White;
-            this.btnViewUserOrders.Location = new System.Drawing.Point(541, 3);
+            this.btnViewUserOrders.Location = new System.Drawing.Point(538, 0);
+            this.btnViewUserOrders.Margin = new System.Windows.Forms.Padding(0);
             this.btnViewUserOrders.Name = "btnViewUserOrders";
-            this.btnViewUserOrders.Size = new System.Drawing.Size(263, 77);
+            this.btnViewUserOrders.Size = new System.Drawing.Size(269, 83);
             this.btnViewUserOrders.TabIndex = 4;
             this.btnViewUserOrders.Text = "Ver Ordenes";
             this.btnViewUserOrders.UseVisualStyleBackColor = false;
             this.btnViewUserOrders.Click += new System.EventHandler(this.btnViewUserOrders_Click);
-            // 
-            // addOrder1
-            // 
-            this.addOrder1.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.addOrder1, 3);
-            this.addOrder1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addOrder1.Location = new System.Drawing.Point(3, 86);
-            this.addOrder1.Name = "addOrder1";
-            this.addOrder1.Size = new System.Drawing.Size(801, 329);
-            this.addOrder1.TabIndex = 5;
             // 
             // ManageUserOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanelUserOrders);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "ManageUserOrders";
             this.Size = new System.Drawing.Size(807, 418);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanelUserOrders.ResumeLayout(false);
             this.ResumeLayout(false);
         }
 
-        private SourceCode.AddOrder addOrder1;
         private System.Windows.Forms.Button btnAddUserOrder;
         private System.Windows.Forms.Button btnEliminateUserOrder;
         private System.Windows.Forms.Button btnViewUserOrders;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelUserOrders;
 
         #endregion
     }

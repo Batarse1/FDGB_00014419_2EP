@@ -48,7 +48,8 @@ namespace SourceCode
             this.tableLayoutPanelUser.Controls.Add(this.lblUserIdDB, 1, 1);
             this.tableLayoutPanelUser.Controls.Add(this.btnEliminateUser, 1, 3);
             this.tableLayoutPanelUser.Controls.Add(this.comboBoxUsers, 2, 1);
-            this.tableLayoutPanelUser.Location = new System.Drawing.Point(84, 0);
+            this.tableLayoutPanelUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelUser.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanelUser.Name = "tableLayoutPanelUser";
             this.tableLayoutPanelUser.RowCount = 5;
             this.tableLayoutPanelUser.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.33F));
@@ -56,7 +57,7 @@ namespace SourceCode
             this.tableLayoutPanelUser.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.34F));
             this.tableLayoutPanelUser.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanelUser.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.33F));
-            this.tableLayoutPanelUser.Size = new System.Drawing.Size(640, 371);
+            this.tableLayoutPanelUser.Size = new System.Drawing.Size(724, 441);
             this.tableLayoutPanelUser.TabIndex = 0;
             // 
             // lblUserIdDB
@@ -64,35 +65,36 @@ namespace SourceCode
             this.lblUserIdDB.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblUserIdDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblUserIdDB.ForeColor = System.Drawing.Color.White;
-            this.lblUserIdDB.Location = new System.Drawing.Point(35, 90);
+            this.lblUserIdDB.Location = new System.Drawing.Point(39, 107);
             this.lblUserIdDB.Name = "lblUserIdDB";
-            this.lblUserIdDB.Size = new System.Drawing.Size(186, 25);
+            this.lblUserIdDB.Size = new System.Drawing.Size(211, 25);
             this.lblUserIdDB.TabIndex = 0;
             this.lblUserIdDB.Text = "Usuario";
             this.lblUserIdDB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnEliminateUser
             // 
+            this.btnEliminateUser.BackColor = System.Drawing.Color.MediumPurple;
             this.tableLayoutPanelUser.SetColumnSpan(this.btnEliminateUser, 2);
             this.btnEliminateUser.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEliminateUser.FlatAppearance.BorderSize = 0;
             this.btnEliminateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminateUser.ForeColor = System.Drawing.Color.White;
-            this.btnEliminateUser.Location = new System.Drawing.Point(35, 208);
+            this.btnEliminateUser.Location = new System.Drawing.Point(39, 247);
             this.btnEliminateUser.Name = "btnEliminateUser";
-            this.btnEliminateUser.Size = new System.Drawing.Size(570, 68);
+            this.btnEliminateUser.Size = new System.Drawing.Size(645, 68);
             this.btnEliminateUser.TabIndex = 1;
             this.btnEliminateUser.Text = "Eliminar Usuario";
-            this.btnEliminateUser.UseVisualStyleBackColor = true;
+            this.btnEliminateUser.UseVisualStyleBackColor = false;
             this.btnEliminateUser.Click += new System.EventHandler(this.btnEliminateUser_Click);
             // 
             // comboBoxUsers
             // 
             this.comboBoxUsers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxUsers.FormattingEnabled = true;
-            this.comboBoxUsers.Location = new System.Drawing.Point(227, 93);
+            this.comboBoxUsers.Location = new System.Drawing.Point(256, 110);
             this.comboBoxUsers.Name = "comboBoxUsers";
-            this.comboBoxUsers.Size = new System.Drawing.Size(378, 24);
+            this.comboBoxUsers.Size = new System.Drawing.Size(428, 24);
             this.comboBoxUsers.TabIndex = 2;
             // 
             // EliminateUser

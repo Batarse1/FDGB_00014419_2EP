@@ -75,7 +75,7 @@ namespace SourceCode
             // 
             // btnEliminateBusiness
             // 
-            this.btnEliminateBusiness.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminateBusiness.BackColor = System.Drawing.Color.MediumPurple;
             this.tableLayoutPanelBusiness.SetColumnSpan(this.btnEliminateBusiness, 2);
             this.btnEliminateBusiness.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEliminateBusiness.FlatAppearance.BorderSize = 0;

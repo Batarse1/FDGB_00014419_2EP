@@ -31,23 +31,11 @@ namespace SourceCode
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridViewUsers)).BeginInit();
+            this.dataGridViewUser = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridViewUser)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridViewUsers
-            // 
-            this.dataGridViewUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewUsers.BackgroundColor = System.Drawing.SystemColors.Desktop;
-            this.dataGridViewUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUsers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewUsers.Location = new System.Drawing.Point(21, 20);
-            this.dataGridViewUsers.Name = "dataGridViewUsers";
-            this.dataGridViewUsers.RowTemplate.Height = 24;
-            this.dataGridViewUsers.Size = new System.Drawing.Size(328, 300);
-            this.dataGridViewUsers.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -55,7 +43,7 @@ namespace SourceCode
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.Controls.Add(this.dataGridViewUsers, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dataGridViewUser, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -66,21 +54,35 @@ namespace SourceCode
             this.tableLayoutPanel1.Size = new System.Drawing.Size(372, 341);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
+            // dataGridViewUser
+            // 
+            this.dataGridViewUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewUser.BackgroundColor = System.Drawing.Color.Indigo;
+            this.dataGridViewUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewUser.Location = new System.Drawing.Point(21, 20);
+            this.dataGridViewUser.Name = "dataGridViewUser";
+            this.dataGridViewUser.RowTemplate.Height = 24;
+            this.dataGridViewUser.Size = new System.Drawing.Size(328, 300);
+            this.dataGridViewUser.TabIndex = 0;
+            // 
             // ViewUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.Name = "ViewUsers";
             this.Size = new System.Drawing.Size(372, 341);
             this.Load += new System.EventHandler(this.ViewUsers_Load);
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridViewUsers)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridViewUser)).EndInit();
             this.ResumeLayout(false);
         }
 
-        private System.Windows.Forms.DataGridView dataGridViewUsers;
+        private System.Windows.Forms.DataGridView dataGridViewUser;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 
         #endregion

@@ -12,10 +12,8 @@ namespace SourceCode
 {
     public partial class Login : Form
     {
-        private List<User> lista = new List<User>();
         public Login()
         {
-            InitializeList();
             InitializeComponent();
         }
 
@@ -29,7 +27,7 @@ namespace SourceCode
             {
                 try
                 {
-                    LoginVerification(txtBoxName.Text,txtBoxPassword.Text);                   
+                    LoginVerification(txtBoxName.Text,txtBoxPassword.Text, InitializeList());                   
                 }
                 catch(Exception){
                     MessageBox.Show("Ha ocurrido un error");
@@ -37,7 +35,8 @@ namespace SourceCode
             }
         }
         
-        private void InitializeList(){
+        private List<User> InitializeList(){
+            List<User> lista = new List<User>();
             string sql = "SELECT * FROM APPUSER";
             DataTable dt = ConnectionDB.realizarConsulta(sql);
             foreach (DataRow row in dt.Rows)
@@ -50,9 +49,10 @@ namespace SourceCode
                 u.usertype = Convert.ToBoolean(row[4].ToString());
                 lista.Add(u);
             }
+            return lista;
         }
         
-        private void LoginVerification(String a, String b)
+        private void LoginVerification(String a, String b, List<User> lista)
         {
             bool usernameVerification = false;
             bool passwordVerification = false;
@@ -87,6 +87,18 @@ namespace SourceCode
             {
                 MessageBox.Show("Contraseña incorrecta");
             }
+        }
+
+        private void btnChangePassword_Click(object sender, EventArgs e)
+        {
+            Password Window = new Password();
+            Window.Show();
+            this.Hide(); 
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

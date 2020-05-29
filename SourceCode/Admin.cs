@@ -20,7 +20,7 @@ namespace SourceCode
                 current = new ManageUsers();
                 current.Dock = DockStyle.Fill;
                 tableLayoutPanelAdmin.Controls.Add(current, 0,1);
-                tableLayoutPanelAdmin.SetColumnSpan(current, 5);
+                tableLayoutPanelAdmin.SetColumnSpan(current, 4);
             }
         }
 
@@ -32,7 +32,7 @@ namespace SourceCode
                 current = new ManageBusiness();
                 current.Dock = DockStyle.Fill;
                 tableLayoutPanelAdmin.Controls.Add(current, 0,1);
-                tableLayoutPanelAdmin.SetColumnSpan(current, 5);
+                tableLayoutPanelAdmin.SetColumnSpan(current, 4);
             }
         }
 
@@ -44,7 +44,7 @@ namespace SourceCode
                 current = new ManageProducts();
                 current.Dock = DockStyle.Fill;
                 tableLayoutPanelAdmin.Controls.Add(current, 0,1);
-                tableLayoutPanelAdmin.SetColumnSpan(current, 5);
+                tableLayoutPanelAdmin.SetColumnSpan(current, 4);
             }
         }
 
@@ -56,8 +56,13 @@ namespace SourceCode
                 current = new ViewUsersOrdersHistory();
                 current.Dock = DockStyle.Fill;
                 tableLayoutPanelAdmin.Controls.Add(current, 0,1);
-                tableLayoutPanelAdmin.SetColumnSpan(current, 5);
+                tableLayoutPanelAdmin.SetColumnSpan(current, 4);
             }
+        }
+        
+        private void Admin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

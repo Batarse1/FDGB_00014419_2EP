@@ -24,6 +24,7 @@ namespace SourceCode
                 {
                     string sql = $"INSERT INTO PRODUCT(idBusiness, name) VALUES({comboBoxBusiness.SelectedValue}, '{txtBoxName.Text}')";
                     ConnectionDB.realizarAccion(sql);
+                    MessageBox.Show("El producto se agrego exitosamente");
                 }
                 catch(Exception)
                 {
@@ -34,24 +35,32 @@ namespace SourceCode
 
         private void AddProduct_Load(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM BUSINESS";
-            
-            DataTable dt = ConnectionDB.realizarConsulta(sql);
-            
-            List<Business> lista = new List<Business>();
-            
-            foreach (DataRow row in dt.Rows)
+            try
             {
-                Business b = new Business();
-                b.idBusiness = Convert.ToInt32(row[0].ToString());
-                b.name = row[1].ToString();
-                b.description = row[2].ToString();
-                lista.Add(b);
+                    string sql = "SELECT * FROM BUSINESS";
+                    
+                    DataTable dt = ConnectionDB.realizarConsulta(sql);
+                    
+                    List<Business> lista = new List<Business>();
+                    
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        Business b = new Business();
+                        b.idBusiness = Convert.ToInt32(row[0].ToString());
+                        b.name = row[1].ToString();
+                        b.description = row[2].ToString();
+                        lista.Add(b);
+                    }
+        
+                    comboBoxBusiness.ValueMember = "idBusiness";
+                    comboBoxBusiness.DisplayMember = "name";
+                    comboBoxBusiness.DataSource = lista;    
             }
-
-            comboBoxBusiness.ValueMember = "idBusiness";
-            comboBoxBusiness.DisplayMember = "name";
-            comboBoxBusiness.DataSource = lista;
+            catch(Exception)
+            {
+                MessageBox.Show("Ha ocurrido un error");
+            }
+            
         }
     }
 }

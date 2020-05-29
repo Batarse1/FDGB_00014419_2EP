@@ -1,4 +1,6 @@
-﻿namespace SourceCode
+﻿using System;
+
+namespace SourceCode
 {
     public static class Eliminar
     {
@@ -7,21 +9,9 @@
             
         }
 
-        public static void eliminarDB(string type, int id)
+        public static void eliminarDB(string type,string type_id, int id)
         {
-            string sql = "";
-            if (type.Equals("Business"))
-            {
-                sql = $"DELETE FROM BUSINESS WHERE idBusiness = {id}";  
-            }
-            else if (type.Equals("Product"))
-            {
-                sql = $"DELETE FROM PRODUCT WHERE idProduct = {id}";
-            }
-            else if (type.Equals("User"))
-            {
-                sql = $"DELETE FROM APPUSER WHERE idUser = {id}";
-            }
+            string sql = $"DELETE FROM {type} WHERE {type_id} = {id}";
             ConnectionDB.realizarAccion(sql);
         }
     }

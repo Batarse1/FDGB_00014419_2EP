@@ -92,6 +92,7 @@ namespace SourceCode
             // 
             // btnAddProductDB
             // 
+            this.btnAddProductDB.BackColor = System.Drawing.Color.MediumPurple;
             this.tableLayoutPanelBusiness.SetColumnSpan(this.btnAddProductDB, 2);
             this.btnAddProductDB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAddProductDB.FlatAppearance.BorderSize = 0;
@@ -103,7 +104,7 @@ namespace SourceCode
             this.btnAddProductDB.Size = new System.Drawing.Size(609, 99);
             this.btnAddProductDB.TabIndex = 6;
             this.btnAddProductDB.Text = "Añadir Producto";
-            this.btnAddProductDB.UseVisualStyleBackColor = true;
+            this.btnAddProductDB.UseVisualStyleBackColor = false;
             this.btnAddProductDB.Click += new System.EventHandler(this.btnAddProductDB_Click);
             // 
             // txtBoxName

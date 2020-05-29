@@ -63,6 +63,7 @@ namespace SourceCode
             // lblProductIdDB
             // 
             this.lblProductIdDB.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblProductIdDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblProductIdDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblProductIdDB.ForeColor = System.Drawing.Color.White;
             this.lblProductIdDB.Location = new System.Drawing.Point(36, 111);
@@ -74,6 +75,7 @@ namespace SourceCode
             // 
             // btnEliminateProduct
             // 
+            this.btnEliminateProduct.BackColor = System.Drawing.Color.MediumPurple;
             this.tableLayoutPanelProduct.SetColumnSpan(this.btnEliminateProduct, 2);
             this.btnEliminateProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEliminateProduct.FlatAppearance.BorderSize = 0;
@@ -84,7 +86,7 @@ namespace SourceCode
             this.btnEliminateProduct.Size = new System.Drawing.Size(589, 85);
             this.btnEliminateProduct.TabIndex = 1;
             this.btnEliminateProduct.Text = "Eliminar Producto";
-            this.btnEliminateProduct.UseVisualStyleBackColor = true;
+            this.btnEliminateProduct.UseVisualStyleBackColor = false;
             this.btnEliminateProduct.Click += new System.EventHandler(this.btnEliminateProduct_Click);
             // 
             // comboBoxProducts

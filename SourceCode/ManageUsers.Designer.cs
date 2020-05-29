@@ -66,9 +66,10 @@ namespace SourceCode
             this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddUser.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnAddUser.ForeColor = System.Drawing.Color.White;
-            this.btnAddUser.Location = new System.Drawing.Point(3, 3);
+            this.btnAddUser.Location = new System.Drawing.Point(0, 0);
+            this.btnAddUser.Margin = new System.Windows.Forms.Padding(0);
             this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(167, 64);
+            this.btnAddUser.Size = new System.Drawing.Size(173, 70);
             this.btnAddUser.TabIndex = 0;
             this.btnAddUser.Text = "Añadir";
             this.btnAddUser.UseVisualStyleBackColor = false;
@@ -81,9 +82,10 @@ namespace SourceCode
             this.btnEliminateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminateUser.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnEliminateUser.ForeColor = System.Drawing.Color.White;
-            this.btnEliminateUser.Location = new System.Drawing.Point(176, 3);
+            this.btnEliminateUser.Location = new System.Drawing.Point(173, 0);
+            this.btnEliminateUser.Margin = new System.Windows.Forms.Padding(0);
             this.btnEliminateUser.Name = "btnEliminateUser";
-            this.btnEliminateUser.Size = new System.Drawing.Size(167, 64);
+            this.btnEliminateUser.Size = new System.Drawing.Size(173, 70);
             this.btnEliminateUser.TabIndex = 1;
             this.btnEliminateUser.Text = "Eliminar";
             this.btnEliminateUser.UseVisualStyleBackColor = true;
@@ -96,9 +98,10 @@ namespace SourceCode
             this.btnViewUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewUsers.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnViewUsers.ForeColor = System.Drawing.Color.White;
-            this.btnViewUsers.Location = new System.Drawing.Point(349, 3);
+            this.btnViewUsers.Location = new System.Drawing.Point(346, 0);
+            this.btnViewUsers.Margin = new System.Windows.Forms.Padding(0);
             this.btnViewUsers.Name = "btnViewUsers";
-            this.btnViewUsers.Size = new System.Drawing.Size(169, 64);
+            this.btnViewUsers.Size = new System.Drawing.Size(175, 70);
             this.btnViewUsers.TabIndex = 2;
             this.btnViewUsers.Text = "Visualizar";
             this.btnViewUsers.UseVisualStyleBackColor = true;
@@ -108,9 +111,10 @@ namespace SourceCode
             // 
             this.tableLayoutPanelUsers.SetColumnSpan(this.addUser1, 3);
             this.addUser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addUser1.Location = new System.Drawing.Point(3, 73);
+            this.addUser1.Location = new System.Drawing.Point(0, 70);
+            this.addUser1.Margin = new System.Windows.Forms.Padding(0);
             this.addUser1.Name = "addUser1";
-            this.addUser1.Size = new System.Drawing.Size(515, 277);
+            this.addUser1.Size = new System.Drawing.Size(521, 283);
             this.addUser1.TabIndex = 3;
             // 
             // ManageUsers
@@ -119,6 +123,7 @@ namespace SourceCode
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tableLayoutPanelUsers);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "ManageUsers";
             this.Size = new System.Drawing.Size(521, 353);
             this.tableLayoutPanelUsers.ResumeLayout(false);

@@ -63,9 +63,10 @@ namespace SourceCode
             this.btnAddBusiness.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddBusiness.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnAddBusiness.ForeColor = System.Drawing.Color.White;
-            this.btnAddBusiness.Location = new System.Drawing.Point(3, 3);
+            this.btnAddBusiness.Location = new System.Drawing.Point(0, 0);
+            this.btnAddBusiness.Margin = new System.Windows.Forms.Padding(0);
             this.btnAddBusiness.Name = "btnAddBusiness";
-            this.btnAddBusiness.Size = new System.Drawing.Size(330, 86);
+            this.btnAddBusiness.Size = new System.Drawing.Size(336, 92);
             this.btnAddBusiness.TabIndex = 1;
             this.btnAddBusiness.Text = "Añadir";
             this.btnAddBusiness.UseVisualStyleBackColor = false;
@@ -79,9 +80,10 @@ namespace SourceCode
             this.btnEliminateBusiness.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminateBusiness.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnEliminateBusiness.ForeColor = System.Drawing.Color.White;
-            this.btnEliminateBusiness.Location = new System.Drawing.Point(339, 3);
+            this.btnEliminateBusiness.Location = new System.Drawing.Point(336, 0);
+            this.btnEliminateBusiness.Margin = new System.Windows.Forms.Padding(0);
             this.btnEliminateBusiness.Name = "btnEliminateBusiness";
-            this.btnEliminateBusiness.Size = new System.Drawing.Size(331, 86);
+            this.btnEliminateBusiness.Size = new System.Drawing.Size(337, 92);
             this.btnEliminateBusiness.TabIndex = 2;
             this.btnEliminateBusiness.Text = "Eliminar";
             this.btnEliminateBusiness.UseVisualStyleBackColor = false;
@@ -92,9 +94,10 @@ namespace SourceCode
             this.addBusiness1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanelBusiness.SetColumnSpan(this.addBusiness1, 2);
             this.addBusiness1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addBusiness1.Location = new System.Drawing.Point(3, 95);
+            this.addBusiness1.Location = new System.Drawing.Point(0, 92);
+            this.addBusiness1.Margin = new System.Windows.Forms.Padding(0);
             this.addBusiness1.Name = "addBusiness1";
-            this.addBusiness1.Size = new System.Drawing.Size(667, 364);
+            this.addBusiness1.Size = new System.Drawing.Size(673, 370);
             this.addBusiness1.TabIndex = 3;
             // 
             // ManageBusiness
@@ -103,6 +106,7 @@ namespace SourceCode
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tableLayoutPanelBusiness);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "ManageBusiness";
             this.Size = new System.Drawing.Size(673, 462);
             this.tableLayoutPanelBusiness.ResumeLayout(false);

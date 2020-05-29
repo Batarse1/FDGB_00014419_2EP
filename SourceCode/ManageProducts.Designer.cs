@@ -109,9 +109,10 @@ namespace SourceCode
             this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddProduct.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnAddProduct.ForeColor = System.Drawing.Color.White;
-            this.btnAddProduct.Location = new System.Drawing.Point(3, 3);
+            this.btnAddProduct.Location = new System.Drawing.Point(0, 0);
+            this.btnAddProduct.Margin = new System.Windows.Forms.Padding(0);
             this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(200, 67);
+            this.btnAddProduct.Size = new System.Drawing.Size(206, 73);
             this.btnAddProduct.TabIndex = 1;
             this.btnAddProduct.Text = "Añadir";
             this.btnAddProduct.UseVisualStyleBackColor = false;
@@ -125,9 +126,10 @@ namespace SourceCode
             this.BtnEliminateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminateProduct.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.BtnEliminateProduct.ForeColor = System.Drawing.Color.White;
-            this.BtnEliminateProduct.Location = new System.Drawing.Point(209, 3);
+            this.BtnEliminateProduct.Location = new System.Drawing.Point(206, 0);
+            this.BtnEliminateProduct.Margin = new System.Windows.Forms.Padding(0);
             this.BtnEliminateProduct.Name = "BtnEliminateProduct";
-            this.BtnEliminateProduct.Size = new System.Drawing.Size(201, 67);
+            this.BtnEliminateProduct.Size = new System.Drawing.Size(207, 73);
             this.BtnEliminateProduct.TabIndex = 2;
             this.BtnEliminateProduct.Text = "Eliminar";
             this.BtnEliminateProduct.UseVisualStyleBackColor = false;
@@ -150,6 +152,7 @@ namespace SourceCode
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tableLayoutPanelProduct);
             this.Location = new System.Drawing.Point(19, 19);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "ManageProducts";
             this.Size = new System.Drawing.Size(413, 368);
             this.tableLayoutPanelBusiness.ResumeLayout(false);

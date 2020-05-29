@@ -92,6 +92,7 @@ namespace SourceCode
             // 
             // btnAddBusinessDB
             // 
+            this.btnAddBusinessDB.BackColor = System.Drawing.Color.MediumPurple;
             this.tableLayoutPanelBusiness.SetColumnSpan(this.btnAddBusinessDB, 2);
             this.btnAddBusinessDB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAddBusinessDB.FlatAppearance.BorderSize = 0;
@@ -103,7 +104,7 @@ namespace SourceCode
             this.btnAddBusinessDB.Size = new System.Drawing.Size(526, 77);
             this.btnAddBusinessDB.TabIndex = 6;
             this.btnAddBusinessDB.Text = "Añadir Negocio";
-            this.btnAddBusinessDB.UseVisualStyleBackColor = true;
+            this.btnAddBusinessDB.UseVisualStyleBackColor = false;
             this.btnAddBusinessDB.Click += new System.EventHandler(this.btnAddBusinessDB_Click);
             // 
             // txtBoxName

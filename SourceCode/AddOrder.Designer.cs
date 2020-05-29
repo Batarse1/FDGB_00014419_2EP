@@ -86,8 +86,9 @@ namespace SourceCode
             // 
             // lblProduct
             // 
+            this.lblProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblProduct.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.lblProduct.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblProduct.ForeColor = System.Drawing.Color.White;
             this.lblProduct.Location = new System.Drawing.Point(36, 80);
             this.lblProduct.Name = "lblProduct";
@@ -98,8 +99,9 @@ namespace SourceCode
             // 
             // lblDirection
             // 
+            this.lblDirection.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblDirection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblDirection.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.lblDirection.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblDirection.ForeColor = System.Drawing.Color.White;
             this.lblDirection.Location = new System.Drawing.Point(36, 194);
             this.lblDirection.Name = "lblDirection";
@@ -110,7 +112,9 @@ namespace SourceCode
             // 
             // btnAddProductDB
             // 
+            this.btnAddProductDB.BackColor = System.Drawing.Color.MediumPurple;
             this.tableLayoutPanelAddOrder.SetColumnSpan(this.btnAddProductDB, 2);
+            this.btnAddProductDB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAddProductDB.FlatAppearance.BorderSize = 0;
             this.btnAddProductDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddProductDB.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
@@ -120,7 +124,8 @@ namespace SourceCode
             this.btnAddProductDB.Size = new System.Drawing.Size(597, 91);
             this.btnAddProductDB.TabIndex = 7;
             this.btnAddProductDB.Text = "Añadir Orden";
-            this.btnAddProductDB.UseVisualStyleBackColor = true;
+            this.btnAddProductDB.UseVisualStyleBackColor = false;
+            this.btnAddProductDB.Click += new System.EventHandler(this.btnAddProductDB_Click);
             // 
             // AddOrder
             // 

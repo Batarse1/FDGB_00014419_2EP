@@ -57,6 +57,8 @@ namespace SourceCode
             // dataGridViewUsersOrdersHistory
             // 
             this.dataGridViewUsersOrdersHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewUsersOrdersHistory.BackgroundColor = System.Drawing.Color.Indigo;
+            this.dataGridViewUsersOrdersHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewUsersOrdersHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewUsersOrdersHistory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewUsersOrdersHistory.Location = new System.Drawing.Point(33, 38);
