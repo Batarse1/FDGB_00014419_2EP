@@ -190,6 +190,7 @@
         <Compile Include="EliminateUser.Designer.cs">
           <DependentUpon>EliminateUser.cs</DependentUpon>
         </Compile>
+        <Compile Include="FullnameException.cs" />
         <Compile Include="Login.cs">
             <SubType>Form</SubType>
         </Compile>

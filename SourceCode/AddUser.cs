@@ -34,20 +34,29 @@ namespace SourceCode
             {
                 try
                 {
+                    if (verifyFullname(txtBoxFullname.Text))
+                    {
+                        throw new FullnameException("Debe de ingresar solo letras del alfabeto");
+                    }
+
                     bool Usertype = false;
                     if (comboBoxUserType.Text.Equals("Administrador"))
                     {
                         Usertype = true;
-                        AddUserVerification(txtBoxFullname.Text,txtBoxUsername.Text,txtBoxPassword.Text,Usertype); 
+                        AddUserVerification(txtBoxFullname.Text, txtBoxUsername.Text, txtBoxPassword.Text, Usertype);
                     }
                     else if (comboBoxUserType.Text.Equals("Usuario normal"))
                     {
-                        AddUserVerification(txtBoxFullname.Text,txtBoxUsername.Text,txtBoxPassword.Text,Usertype); 
+                        AddUserVerification(txtBoxFullname.Text, txtBoxUsername.Text, txtBoxPassword.Text, Usertype);
                     }
                     else
                     {
                         MessageBox.Show("Debe de ingresar un tipo de usuario válido");
                     }
+                }
+                catch (FullnameException exc)
+                {
+                    MessageBox.Show(exc.Message);   
                 }
                 catch(Exception){
                     MessageBox.Show("Ha ocurrido un error");
@@ -65,6 +74,27 @@ namespace SourceCode
             catch(Exception){
                 MessageBox.Show("Ha ocurrido un error");
             }
+        }
+        
+        private bool verifyFullname(String a)
+        {
+            bool verifier = false;
+            foreach (char c in a)
+            {
+                if (c>96 && c<123)
+                {
+                    
+                }
+                else if (c > 64 && c < 91)
+                {
+                    
+                }
+                else
+                {
+                    verifier = true;
+                }
+            }
+            return verifier;
         }
     }
 }
