@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPassword));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txtOldPassword = new System.Windows.Forms.TextBox();
@@ -73,12 +74,15 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(510, 57);
+            this.button1.BackColor = System.Drawing.Color.DarkBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(500, 57);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 155);
+            this.button1.Size = new System.Drawing.Size(99, 155);
             this.button1.TabIndex = 4;
             this.button1.Text = "Cambiar contrasena";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label1
@@ -103,6 +107,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(638, 291);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -111,8 +117,12 @@
             this.Controls.Add(this.txtOldPassword);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
+            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmPassword";
-            this.Text = "FrmPassword";
+            this.Text = "Cambiar Contraseña";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPassword_FormClosing);
             this.Load += new System.EventHandler(this.FrmPassword_Load);
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

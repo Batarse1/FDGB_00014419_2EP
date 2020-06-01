@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cmbUser = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -83,28 +84,36 @@
             // 
             // bttnLogin
             // 
-            this.bttnLogin.Location = new System.Drawing.Point(570, 61);
+            this.bttnLogin.BackColor = System.Drawing.Color.DarkBlue;
+            this.bttnLogin.FlatAppearance.BorderSize = 0;
+            this.bttnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bttnLogin.Location = new System.Drawing.Point(570, 70);
             this.bttnLogin.Name = "bttnLogin";
             this.bttnLogin.Size = new System.Drawing.Size(106, 44);
             this.bttnLogin.TabIndex = 4;
             this.bttnLogin.Text = "Iniciar sesión";
-            this.bttnLogin.UseVisualStyleBackColor = true;
+            this.bttnLogin.UseVisualStyleBackColor = false;
             this.bttnLogin.Click += new System.EventHandler(this.BttnLogin_Click);
             // 
             // bttnUpdatePassword
             // 
-            this.bttnUpdatePassword.Location = new System.Drawing.Point(570, 172);
+            this.bttnUpdatePassword.BackColor = System.Drawing.Color.DarkBlue;
+            this.bttnUpdatePassword.FlatAppearance.BorderSize = 0;
+            this.bttnUpdatePassword.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bttnUpdatePassword.Location = new System.Drawing.Point(570, 183);
             this.bttnUpdatePassword.Name = "bttnUpdatePassword";
             this.bttnUpdatePassword.Size = new System.Drawing.Size(106, 44);
             this.bttnUpdatePassword.TabIndex = 4;
             this.bttnUpdatePassword.Text = "Cambiar contraseña";
-            this.bttnUpdatePassword.UseVisualStyleBackColor = true;
+            this.bttnUpdatePassword.UseVisualStyleBackColor = false;
             this.bttnUpdatePassword.Click += new System.EventHandler(this.BttnUpdatePassword_Click);
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(710, 291);
             this.Controls.Add(this.bttnUpdatePassword);
             this.Controls.Add(this.bttnLogin);
@@ -113,8 +122,12 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.cmbUser);
             this.Controls.Add(this.pictureBox1);
+            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmLogin";
-            this.Text = "Bienvenido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Inicio de Sesión";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Preparcial.Vista.FrmMain));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.generalTab = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
@@ -83,9 +84,6 @@
             this.viewOrdersTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.dgvAllOrders)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tabControl1
-            // 
             this.tabControl1.Controls.Add(this.generalTab);
             this.tabControl1.Controls.Add(this.createNewUserTab);
             this.tabControl1.Controls.Add(this.inventaryTab);
@@ -93,196 +91,158 @@
             this.tabControl1.Controls.Add(this.viewOrdersTab);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(888, 506);
+            this.tabControl1.Size = new System.Drawing.Size(863, 385);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
-            // 
-            // generalTab
-            // 
-            this.generalTab.BackColor = System.Drawing.Color.Transparent;
+            this.generalTab.BackColor = System.Drawing.Color.MidnightBlue;
             this.generalTab.Controls.Add(this.label1);
+            this.generalTab.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.generalTab.Location = new System.Drawing.Point(4, 25);
             this.generalTab.Name = "generalTab";
             this.generalTab.Padding = new System.Windows.Forms.Padding(3);
-            this.generalTab.Size = new System.Drawing.Size(856, 356);
+            this.generalTab.Size = new System.Drawing.Size(855, 356);
             this.generalTab.TabIndex = 0;
             this.generalTab.Text = "General";
-            // 
-            // label1
-            // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(391, 165);
+            this.label1.Location = new System.Drawing.Point(390, 165);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // createNewUserTab
-            // 
+            this.createNewUserTab.BackColor = System.Drawing.Color.MidnightBlue;
             this.createNewUserTab.Controls.Add(this.bttnCreateUser);
             this.createNewUserTab.Controls.Add(this.label2);
             this.createNewUserTab.Controls.Add(this.txtNewUser);
             this.createNewUserTab.Controls.Add(this.dgvCreateUser);
+            this.createNewUserTab.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.createNewUserTab.Location = new System.Drawing.Point(4, 25);
             this.createNewUserTab.Name = "createNewUserTab";
             this.createNewUserTab.Padding = new System.Windows.Forms.Padding(3);
-            this.createNewUserTab.Size = new System.Drawing.Size(880, 477);
+            this.createNewUserTab.Size = new System.Drawing.Size(855, 356);
             this.createNewUserTab.TabIndex = 1;
             this.createNewUserTab.Text = "Crear usuario";
-            this.createNewUserTab.UseVisualStyleBackColor = true;
-            // 
-            // bttnCreateUser
-            // 
+            this.bttnCreateUser.BackColor = System.Drawing.Color.DarkBlue;
+            this.bttnCreateUser.FlatAppearance.BorderSize = 0;
+            this.bttnCreateUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bttnCreateUser.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.bttnCreateUser.Location = new System.Drawing.Point(583, 19);
             this.bttnCreateUser.Name = "bttnCreateUser";
             this.bttnCreateUser.Size = new System.Drawing.Size(104, 27);
             this.bttnCreateUser.TabIndex = 3;
             this.bttnCreateUser.Text = "Agregar";
-            this.bttnCreateUser.UseVisualStyleBackColor = true;
+            this.bttnCreateUser.UseVisualStyleBackColor = false;
             this.bttnCreateUser.Click += new System.EventHandler(this.bttnCreateUser_Click);
-            // 
-            // label2
-            // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(192, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nuevo usuario";
-            // 
-            // txtNewUser
-            // 
             this.txtNewUser.Location = new System.Drawing.Point(333, 21);
             this.txtNewUser.Name = "txtNewUser";
             this.txtNewUser.Size = new System.Drawing.Size(197, 22);
             this.txtNewUser.TabIndex = 1;
-            // 
-            // dgvCreateUser
-            // 
             this.dgvCreateUser.AllowUserToAddRows = false;
             this.dgvCreateUser.AllowUserToDeleteRows = false;
+            this.dgvCreateUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCreateUser.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.dgvCreateUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCreateUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCreateUser.Location = new System.Drawing.Point(6, 74);
+            this.dgvCreateUser.Location = new System.Drawing.Point(19, 74);
             this.dgvCreateUser.Name = "dgvCreateUser";
             this.dgvCreateUser.ReadOnly = true;
             this.dgvCreateUser.RowHeadersWidth = 51;
             this.dgvCreateUser.RowTemplate.Height = 24;
-            this.dgvCreateUser.Size = new System.Drawing.Size(844, 276);
+            this.dgvCreateUser.Size = new System.Drawing.Size(818, 263);
             this.dgvCreateUser.TabIndex = 0;
-            // 
-            // inventaryTab
-            // 
+            this.inventaryTab.BackColor = System.Drawing.Color.MidnightBlue;
             this.inventaryTab.Controls.Add(this.groupBox3);
             this.inventaryTab.Controls.Add(this.groupBox2);
             this.inventaryTab.Controls.Add(this.groupBox1);
             this.inventaryTab.Controls.Add(this.dgvInventary);
+            this.inventaryTab.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.inventaryTab.Location = new System.Drawing.Point(4, 25);
             this.inventaryTab.Name = "inventaryTab";
-            this.inventaryTab.Size = new System.Drawing.Size(856, 356);
+            this.inventaryTab.Size = new System.Drawing.Size(855, 356);
             this.inventaryTab.TabIndex = 2;
             this.inventaryTab.Text = "Inventario";
-            this.inventaryTab.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
             this.groupBox3.Controls.Add(this.bttnUpdateStockInventary);
             this.groupBox3.Controls.Add(this.txtUpdateStockInventary);
             this.groupBox3.Controls.Add(this.txtUpdateStockIdInventary);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox3.Location = new System.Drawing.Point(605, 31);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(236, 105);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Actualizar producto";
-            // 
-            // bttnUpdateStockInventary
-            // 
+            this.bttnUpdateStockInventary.BackColor = System.Drawing.Color.DarkBlue;
+            this.bttnUpdateStockInventary.FlatAppearance.BorderSize = 0;
+            this.bttnUpdateStockInventary.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bttnUpdateStockInventary.Location = new System.Drawing.Point(6, 66);
             this.bttnUpdateStockInventary.Name = "bttnUpdateStockInventary";
             this.bttnUpdateStockInventary.Size = new System.Drawing.Size(220, 28);
             this.bttnUpdateStockInventary.TabIndex = 2;
             this.bttnUpdateStockInventary.Text = "Actualizar";
-            this.bttnUpdateStockInventary.UseVisualStyleBackColor = true;
+            this.bttnUpdateStockInventary.UseVisualStyleBackColor = false;
             this.bttnUpdateStockInventary.Click += new System.EventHandler(this.bttnUpdateStockInventary_Click);
-            // 
-            // txtUpdateStockInventary
-            // 
             this.txtUpdateStockInventary.Location = new System.Drawing.Point(191, 31);
             this.txtUpdateStockInventary.Name = "txtUpdateStockInventary";
             this.txtUpdateStockInventary.Size = new System.Drawing.Size(35, 22);
             this.txtUpdateStockInventary.TabIndex = 0;
-            // 
-            // txtUpdateStockIdInventary
-            // 
             this.txtUpdateStockIdInventary.Location = new System.Drawing.Point(91, 33);
             this.txtUpdateStockIdInventary.Name = "txtUpdateStockIdInventary";
             this.txtUpdateStockIdInventary.Size = new System.Drawing.Size(35, 22);
             this.txtUpdateStockIdInventary.TabIndex = 0;
-            // 
-            // label9
-            // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(142, 36);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(43, 17);
             this.label9.TabIndex = 1;
             this.label9.Text = "Stock";
-            // 
-            // label8
-            // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(6, 33);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 17);
             this.label8.TabIndex = 1;
             this.label8.Text = "Id producto";
-            // 
-            // groupBox2
-            // 
             this.groupBox2.Controls.Add(this.bttnDeleteInventary);
             this.groupBox2.Controls.Add(this.txtDeleteInventary);
             this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Location = new System.Drawing.Point(418, 31);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(163, 105);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Eliminar producto";
-            // 
-            // bttnDeleteInventary
-            // 
+            this.bttnDeleteInventary.BackColor = System.Drawing.Color.DarkBlue;
+            this.bttnDeleteInventary.FlatAppearance.BorderSize = 0;
+            this.bttnDeleteInventary.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bttnDeleteInventary.Location = new System.Drawing.Point(6, 66);
             this.bttnDeleteInventary.Name = "bttnDeleteInventary";
             this.bttnDeleteInventary.Size = new System.Drawing.Size(151, 28);
             this.bttnDeleteInventary.TabIndex = 2;
             this.bttnDeleteInventary.Text = "Eliminar";
-            this.bttnDeleteInventary.UseVisualStyleBackColor = true;
+            this.bttnDeleteInventary.UseVisualStyleBackColor = false;
             this.bttnDeleteInventary.Click += new System.EventHandler(this.bttnDeleteInventary_Click);
-            // 
-            // txtDeleteInventary
-            // 
             this.txtDeleteInventary.Location = new System.Drawing.Point(91, 33);
             this.txtDeleteInventary.Name = "txtDeleteInventary";
             this.txtDeleteInventary.Size = new System.Drawing.Size(66, 22);
             this.txtDeleteInventary.TabIndex = 0;
-            // 
-            // label6
-            // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 33);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 17);
             this.label6.TabIndex = 1;
             this.label6.Text = "Id producto";
-            // 
-            // groupBox1
-            // 
             this.groupBox1.Controls.Add(this.bttnAddInventary);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label7);
@@ -292,89 +252,66 @@
             this.groupBox1.Controls.Add(this.txtPriceInventary);
             this.groupBox1.Controls.Add(this.txtStockInventary);
             this.groupBox1.Controls.Add(this.txtProductNameInventary);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(16, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(396, 105);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar producto";
-            // 
-            // bttnAddInventary
-            // 
+            this.bttnAddInventary.BackColor = System.Drawing.Color.DarkBlue;
+            this.bttnAddInventary.FlatAppearance.BorderSize = 0;
+            this.bttnAddInventary.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bttnAddInventary.Location = new System.Drawing.Point(315, 27);
             this.bttnAddInventary.Name = "bttnAddInventary";
             this.bttnAddInventary.Size = new System.Drawing.Size(67, 67);
             this.bttnAddInventary.TabIndex = 2;
             this.bttnAddInventary.Text = "Anadir";
-            this.bttnAddInventary.UseVisualStyleBackColor = true;
+            this.bttnAddInventary.UseVisualStyleBackColor = false;
             this.bttnAddInventary.Click += new System.EventHandler(this.bttnAddInventary_Click);
-            // 
-            // label4
-            // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(11, 77);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 17);
             this.label4.TabIndex = 1;
             this.label4.Text = "Descripcion";
-            // 
-            // label7
-            // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(238, 21);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 17);
             this.label7.TabIndex = 1;
             this.label7.Text = "Stock";
-            // 
-            // label5
-            // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(11, 52);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 17);
             this.label5.TabIndex = 1;
             this.label5.Text = "Precio";
-            // 
-            // label3
-            // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(11, 26);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 17);
             this.label3.TabIndex = 1;
             this.label3.Text = "Producto";
-            // 
-            // txtDescriptionInventary
-            // 
             this.txtDescriptionInventary.Location = new System.Drawing.Point(99, 77);
             this.txtDescriptionInventary.Name = "txtDescriptionInventary";
             this.txtDescriptionInventary.Size = new System.Drawing.Size(117, 22);
             this.txtDescriptionInventary.TabIndex = 0;
-            // 
-            // txtPriceInventary
-            // 
             this.txtPriceInventary.Location = new System.Drawing.Point(99, 49);
             this.txtPriceInventary.Name = "txtPriceInventary";
             this.txtPriceInventary.Size = new System.Drawing.Size(117, 22);
             this.txtPriceInventary.TabIndex = 0;
-            // 
-            // txtStockInventary
-            // 
             this.txtStockInventary.Location = new System.Drawing.Point(231, 46);
             this.txtStockInventary.Name = "txtStockInventary";
             this.txtStockInventary.Size = new System.Drawing.Size(66, 22);
             this.txtStockInventary.TabIndex = 0;
-            // 
-            // txtProductNameInventary
-            // 
             this.txtProductNameInventary.Location = new System.Drawing.Point(99, 21);
             this.txtProductNameInventary.Name = "txtProductNameInventary";
             this.txtProductNameInventary.Size = new System.Drawing.Size(117, 22);
             this.txtProductNameInventary.TabIndex = 0;
-            // 
-            // dgvInventary
-            // 
+            this.dgvInventary.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvInventary.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.dgvInventary.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvInventary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventary.Location = new System.Drawing.Point(16, 158);
             this.dgvInventary.Name = "dgvInventary";
@@ -382,34 +319,31 @@
             this.dgvInventary.RowTemplate.Height = 24;
             this.dgvInventary.Size = new System.Drawing.Size(825, 183);
             this.dgvInventary.TabIndex = 0;
-            // 
-            // createOrderTab
-            // 
+            this.createOrderTab.BackColor = System.Drawing.Color.MidnightBlue;
             this.createOrderTab.Controls.Add(this.groupBox4);
+            this.createOrderTab.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.createOrderTab.Location = new System.Drawing.Point(4, 25);
             this.createOrderTab.Name = "createOrderTab";
-            this.createOrderTab.Size = new System.Drawing.Size(856, 356);
+            this.createOrderTab.Size = new System.Drawing.Size(855, 356);
             this.createOrderTab.TabIndex = 4;
             this.createOrderTab.Text = "Hacer pedido/Ver mis pedidos";
-            this.createOrderTab.UseVisualStyleBackColor = true;
-            // 
-            // groupBox4
-            // 
+            this.groupBox4.BackColor = System.Drawing.Color.MidnightBlue;
             this.groupBox4.Controls.Add(this.dgvMyOrders);
             this.groupBox4.Controls.Add(this.bttnMakeOrder);
             this.groupBox4.Controls.Add(this.txtMakeOrderQuantity);
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.cmbProductMakeOrder);
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox4.Location = new System.Drawing.Point(18, 45);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(818, 297);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Realizar un pedido";
-            // 
-            // dgvMyOrders
-            // 
+            this.dgvMyOrders.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMyOrders.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.dgvMyOrders.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMyOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMyOrders.Location = new System.Drawing.Point(6, 80);
             this.dgvMyOrders.Name = "dgvMyOrders";
@@ -417,65 +351,51 @@
             this.dgvMyOrders.RowTemplate.Height = 24;
             this.dgvMyOrders.Size = new System.Drawing.Size(806, 205);
             this.dgvMyOrders.TabIndex = 4;
-            // 
-            // bttnMakeOrder
-            // 
+            this.bttnMakeOrder.BackColor = System.Drawing.Color.DarkBlue;
+            this.bttnMakeOrder.FlatAppearance.BorderSize = 0;
+            this.bttnMakeOrder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bttnMakeOrder.Location = new System.Drawing.Point(617, 31);
             this.bttnMakeOrder.Name = "bttnMakeOrder";
             this.bttnMakeOrder.Size = new System.Drawing.Size(172, 23);
             this.bttnMakeOrder.TabIndex = 3;
             this.bttnMakeOrder.Text = "Hacer pedido";
-            this.bttnMakeOrder.UseVisualStyleBackColor = true;
+            this.bttnMakeOrder.UseVisualStyleBackColor = false;
             this.bttnMakeOrder.Click += new System.EventHandler(this.bttnMakeOrder_Click);
-            // 
-            // txtMakeOrderQuantity
-            // 
             this.txtMakeOrderQuantity.Location = new System.Drawing.Point(400, 34);
             this.txtMakeOrderQuantity.Name = "txtMakeOrderQuantity";
             this.txtMakeOrderQuantity.Size = new System.Drawing.Size(136, 22);
             this.txtMakeOrderQuantity.TabIndex = 2;
-            // 
-            // label11
-            // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(329, 37);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(64, 17);
             this.label11.TabIndex = 1;
             this.label11.Text = "Cantidad";
-            // 
-            // label10
-            // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(30, 34);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(65, 17);
             this.label10.TabIndex = 1;
             this.label10.Text = "Producto";
-            // 
-            // cmbProductMakeOrder
-            // 
             this.cmbProductMakeOrder.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProductMakeOrder.FormattingEnabled = true;
             this.cmbProductMakeOrder.Location = new System.Drawing.Point(101, 30);
             this.cmbProductMakeOrder.Name = "cmbProductMakeOrder";
             this.cmbProductMakeOrder.Size = new System.Drawing.Size(139, 24);
             this.cmbProductMakeOrder.TabIndex = 0;
-            // 
-            // viewOrdersTab
-            // 
+            this.viewOrdersTab.BackColor = System.Drawing.Color.MidnightBlue;
             this.viewOrdersTab.Controls.Add(this.dgvAllOrders);
+            this.viewOrdersTab.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.viewOrdersTab.Location = new System.Drawing.Point(4, 25);
             this.viewOrdersTab.Name = "viewOrdersTab";
-            this.viewOrdersTab.Size = new System.Drawing.Size(856, 356);
+            this.viewOrdersTab.Size = new System.Drawing.Size(855, 356);
             this.viewOrdersTab.TabIndex = 3;
             this.viewOrdersTab.Text = "Ver pedidos";
-            this.viewOrdersTab.UseVisualStyleBackColor = true;
-            // 
-            // dgvAllOrders
-            // 
             this.dgvAllOrders.AllowUserToAddRows = false;
             this.dgvAllOrders.AllowUserToDeleteRows = false;
+            this.dgvAllOrders.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvAllOrders.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.dgvAllOrders.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvAllOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAllOrders.Location = new System.Drawing.Point(12, 16);
             this.dgvAllOrders.Name = "dgvAllOrders";
@@ -484,15 +404,17 @@
             this.dgvAllOrders.RowTemplate.Height = 24;
             this.dgvAllOrders.Size = new System.Drawing.Size(833, 328);
             this.dgvAllOrders.TabIndex = 0;
-            // 
-            // FrmMain
-            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 506);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(863, 385);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmMain";
-            this.Text = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Bienvenido";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.tabControl1.ResumeLayout(false);

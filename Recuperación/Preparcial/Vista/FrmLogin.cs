@@ -51,12 +51,17 @@ namespace Preparcial
             else
                 MessageBox.Show("Contrasena incorrecta");
         }
-
+        //Crear variable para que el formulario de contraseña solo se pueda abrir una vez
+        public static bool UpdatePassword = false;
         // EventHandler para invocar al form de actualizar contrasena
         private void BttnUpdatePassword_Click(object sender, EventArgs e)
         {
-            FrmPassword frmPassword = new FrmPassword();
-            frmPassword.Show();
+            if (UpdatePassword == false)
+            {
+                UpdatePassword = true;
+                FrmPassword frmPassword = new FrmPassword();
+                frmPassword.Show();
+            }
         }
     }
 }

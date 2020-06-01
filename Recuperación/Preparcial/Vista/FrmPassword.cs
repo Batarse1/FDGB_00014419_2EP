@@ -47,5 +47,10 @@ namespace Preparcial.Vista
             else
             MessageBox.Show("Contrasena actual incorrecta");
         }
+
+        private void FrmPassword_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FrmLogin.UpdatePassword = false;
+        }
     }
 }
